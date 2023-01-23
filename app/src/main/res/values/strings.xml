@@ -12,4 +12,11 @@
     <string name="api_credit">Made using Rick and Morty API</string>
     <string name="author">Author: CJGSaunders</string>
     <string name="version">Version 1.0</string>
+
+
+    <string name="last_location">Last known location:</string>
+    <string name="place_of_origin">Place of origin: </string>
+    <string name="alive_species">%1$s - %2$s</string>
+    <string name="not_found">Sorry! Character not found</string>
+    <string name="search_for">Search for %1$s</string>
 </resources>

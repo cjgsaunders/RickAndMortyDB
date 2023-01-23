@@ -37,7 +37,7 @@ class ResultsActivity : ComponentActivity() {
 
         var searchCharacter = intent.getStringExtra("EXTRA_NAME")
         searchCharacter?.let {
-            viewModel.loadSearchInfo(searchCharacter!!)
+            viewModel.loadSearchInfo(searchCharacter.toString())
         }
 
         val randomCharacters = intent.getStringExtra("EXTRA_RANDOM")
@@ -56,7 +56,7 @@ class ResultsActivity : ComponentActivity() {
                         horizontalAlignment = Alignment.CenterHorizontally
                     ) {
                         Text(
-                            text = "Search for $searchCharacter",
+                            text = getString(R.string.search_for, searchCharacter),
                             style = TextStyle(fontSize = 18.sp, fontWeight = FontWeight.Bold),
                             modifier = Modifier
                                 .align(Alignment.CenterHorizontally)
@@ -71,7 +71,7 @@ class ResultsActivity : ComponentActivity() {
                         ) {
 
                             Text(
-                                text = "Sorry! Character not found",
+                                text = getString(R.string.not_found),
                                 style = TextStyle(fontSize = 18.sp, fontWeight = FontWeight.Bold),
                                 modifier = Modifier.align(Alignment.CenterHorizontally)
                             )
@@ -119,12 +119,12 @@ class ResultsActivity : ComponentActivity() {
                                 modifier = Modifier.align(Alignment.CenterHorizontally)
                             )
                             Text(
-                                "${currentCharacter.status} - ${currentCharacter.species}",
+                                text = getString(R.string.alive_species,currentCharacter.status, currentCharacter.species),
                                 style = TextStyle(fontSize = 12.sp),
                                 modifier = Modifier.padding(start = 10.dp, bottom = 10.dp)
                             )
                             Text(
-                                "Last known location:",
+                                text = getString(R.string.last_location),
                                 style = TextStyle(
                                     fontWeight = FontWeight.Bold,
                                     color = Color.DarkGray,
@@ -137,7 +137,7 @@ class ResultsActivity : ComponentActivity() {
                                 modifier = Modifier.padding(start = 10.dp, bottom = 10.dp)
                             )
                             Text(
-                                "Place of origin: ",
+                                text = getString(R.string.place_of_origin),
                                 style = TextStyle(
                                     fontWeight = FontWeight.Bold,
                                     color = Color.DarkGray,
