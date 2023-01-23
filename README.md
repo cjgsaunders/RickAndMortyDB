@@ -3,7 +3,7 @@ An Android app that uses the Rick and Morty API<br />
 
 Tech Used:<br />
 <br />
-Dagger/Hilt for DI<br />
+Hilt for DI<br />
 MockK for testing<br />
 Compose for the views<br />
 Coil to asyncronously load images from the web into compose<br />
