@@ -62,8 +62,8 @@ class MainActivity : ComponentActivity() {
                     OutlinedTextField(
                         value = searchBox,
                         onValueChange = { searchBox = it },
-                        label = { Text("Enter Character Name") },
-                        placeholder = { Text("ex: Rick Sanchez") },
+                        label = { Text(text = stringResource(R.string.search_box)) },
+                        placeholder = { Text(text = stringResource(R.string.search_box_hint)) },
                         modifier = Modifier.padding(top = 30.dp),
                         singleLine = true,
                         keyboardActions = KeyboardActions(onDone = {showSearchDetails(searchBox)}),
@@ -72,7 +72,7 @@ class MainActivity : ComponentActivity() {
                     Button(onClick = {
                         showSearchDetails(searchBox)
                     }, content = {
-                        Text(text = "Search")
+                        Text(text = stringResource(R.string.search_button))
                     })
 
                     Divider(
@@ -87,7 +87,7 @@ class MainActivity : ComponentActivity() {
                     Button(modifier = Modifier.padding(40.dp), onClick = {
                         randomSearch()
                     }, content = {
-                        Text(text = "Show Random Characters")
+                        Text(text = stringResource(R.string.random_button))
                     })
 
                     Divider(
@@ -99,15 +99,15 @@ class MainActivity : ComponentActivity() {
 
                     Spacer(modifier = Modifier.weight(1f))
                     Text(
-                        text = "Made using Rick and Morty API",
+                        text = stringResource(R.string.api_credit),
                         modifier = Modifier.align(Alignment.Start)
                     )
                     Row(
                         modifier = Modifier.fillMaxWidth(),
                         horizontalArrangement = Arrangement.SpaceBetween
                     ) {
-                        Text(text = "Author: CJGSaunders")
-                        Text(text = "Version 1.0")
+                        Text(stringResource(R.string.author))
+                        Text(stringResource(R.string.version))
                     }
                 }
             }

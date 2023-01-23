@@ -5,4 +5,11 @@
     <string name="title_activity_results">ResultsActivity</string>
     <string name="title_activity_main">MainActivity</string>
     <string name="title_activity_character_details">CharacterDetails</string>
+    <string name="search_box">Enter Character Name</string>
+    <string name="search_box_hint">ex: Rick Sanchez</string>
+    <string name="search_button">Search</string>
+    <string name="random_button">Show Random Characters</string>
+    <string name="api_credit">Made using Rick and Morty API</string>
+    <string name="author">Author: CJGSaunders</string>
+    <string name="version">Version 1.0</string>
 </resources>
