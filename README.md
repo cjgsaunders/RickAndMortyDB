@@ -1,6 +1,13 @@
 An Android app that uses the Rick and Morty API<br />
 <br />
 
+
+
+
+https://user-images.githubusercontent.com/54923165/214050709-13ef6c2b-fec7-4d9f-b6a4-6d4993eeabf2.mp4
+
+
+
 Tech Used:<br />
 <br />
 Hilt for DI<br />
