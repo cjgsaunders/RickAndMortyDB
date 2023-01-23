@@ -1,4 +1,4 @@
-An Android app that uses the Rick and Morty API<br />
+An Android app that uses the Rick and Morty API (https://rickandmortyapi.com/) <br />
 <br />
 
 
