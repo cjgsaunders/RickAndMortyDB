@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">RickAndMortyDB</string>
+    <string name="logo">RickAndMortyDB Logo</string>
+    <string name="character_database">Character Database</string>
+    <string name="title_activity_results">ResultsActivity</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_character_details">CharacterDetails</string>
+</resources>
